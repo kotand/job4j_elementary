@@ -16,7 +16,7 @@ public class SqAreaTest {
 
     @Test
     public void whenP4K1Square1() {
-        int expected = 3;
+        int expected = 1;
         int p = 4;
         double k = 1;
         double out = SqArea.square(p, k);
