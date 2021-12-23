@@ -5,9 +5,4 @@ public class Max {
         int result = left > right ? left : right;
         return result;
     }
-
-    public static void main(String[] args) {
-        int max = Max.max(12, 10);
-        System.out.println(max);
-    }
 }
