@@ -10,11 +10,11 @@ public class MultipleSwitchWeek {
             case "Пятница", "Friday" -> 5;
             case "Суббота", "Saturday" -> 6;
             case "Воскресенье", "Sunday" -> 7;
-            default -> 0;
+            default -> 1;
         };
     }
 
     public static void main(String[] args) {
-        System.out.println(numberOfDay("Monday"));
+        System.out.println(numberOfDay("Tuesday"));
     }
 }
