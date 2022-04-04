@@ -15,24 +15,12 @@ public class SwitchArrayTest {
     }
 
     @Test
-    public void whenSwap4to7() {
-        int[] input = {1, 2, 3, 4, 5, 6, 7};
-        int source = Math.round(input.length) / 2;
-        int dest = Math.round(input.length) / 2;
-        dest++;
+    public void whenSwap1to3() {
+        int[] input = {1, 2, 3, 4};
+        int source = 1;
+        int dest = input.length - 1;
         int[] result = SwitchArray.swap(input, source, dest);
-        int[] expected = {1, 2, 3, 5, 4, 6, 7};
-        Assert.assertArrayEquals(expected, result);
-    }
-
-    @Test
-    public void whenSwap5to6() {
-        int[] input = {1, 2, 3, 4, 5, 6, 7, 8};
-        int source = Math.round(input.length) / 2;
-        int dest = Math.round(input.length) / 2;
-        dest++;
-        int[] result = SwitchArray.swap(input, source, dest);
-        int[] expected = {1, 2, 3, 4, 6, 5, 7, 8};
+        int[] expected = {1, 4, 3, 2};
         Assert.assertArrayEquals(expected, result);
     }
 }
